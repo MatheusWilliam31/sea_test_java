@@ -1,4 +1,4 @@
-# sea_test_java
+# Test Java SEA
 Project Test Java For SEA
 
 ## Regras de Negocio 
