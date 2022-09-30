@@ -1,0 +1,9 @@
+version: '2'
+services:
+  sea-postgres:
+    image: postgres:11.5
+    environment:
+      - POSTGRES_USER=SEA_BD
+      - POSTGRES_PASSWORD=SEABD123
+    ports:
+      - 5432:5432

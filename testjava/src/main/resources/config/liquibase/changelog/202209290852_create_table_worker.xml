@@ -1,0 +1,26 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="202209290852" author="matheus.loose">
+        <createTable tableName="tb_worker" remarks="create table Worker">
+            <column name="id" type="int" autoIncrement="true" remarks="id worker">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="cpf" type="varchar(15)" remarks="name worker">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="varchar(50)" remarks="name worker">
+                <constraints nullable="false"/>
+            </column>
+            <column name="sector_id" type="int" remarks="foreing key sector">
+                <constraints nullable="false"/>
+            </column>
+            <column name="role_id" type="int" remarks="foreing key role">
+            <constraints nullable="false"/>
+        </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

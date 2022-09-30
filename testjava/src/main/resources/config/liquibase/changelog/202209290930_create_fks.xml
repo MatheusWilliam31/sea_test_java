@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="202209290932" author="matheus.loose">
+        <addForeignKeyConstraint baseTableName="tb_role"
+                                 baseColumnNames="sector_id"
+                                 constraintName="fk_role_sector"
+                                 referencedTableName="tb_sector"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+    <changeSet id="202209290935" author="matheus.loose">
+
+        <addForeignKeyConstraint baseTableName="tb_worker"
+                                 baseColumnNames="sector_id"
+                                 constraintName="fk_worker_sector"
+                                 referencedTableName="tb_sector"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+    <changeSet id="202209290937" author="matheus.loose">
+
+        <addForeignKeyConstraint baseTableName="tb_worker"
+                                 baseColumnNames="role_id"
+                                 constraintName="fk_worker_role"
+                                 referencedTableName="tb_role"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,7 @@
+version: '2'
+services:
+  sea-postgres:
+    extends:
+      file: postgres/postgres.yml
+      service: sea-postgres
+    container_name: sea-postgres
