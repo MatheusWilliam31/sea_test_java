@@ -1,10 +1,8 @@
 package com.seasolutions.testjava.services;
 
 import com.seasolutions.testjava.entities.Sector;
-import com.seasolutions.testjava.entities.Worker;
 import com.seasolutions.testjava.repositories.SectorRepository;
 import com.seasolutions.testjava.services.dto.SectorDTO;
-import com.seasolutions.testjava.services.dto.WorkerDTO;
 import com.seasolutions.testjava.services.exceptions.DataIntegrityViolationException;
 import com.seasolutions.testjava.services.exceptions.ResourceNotFoundException;
 import com.seasolutions.testjava.services.mappers.SectorMapper;

@@ -3,7 +3,6 @@ package com.seasolutions.testjava.services;
 import com.seasolutions.testjava.entities.Role;
 import com.seasolutions.testjava.repositories.RoleRepository;
 import com.seasolutions.testjava.services.dto.RoleDTO;
-import com.seasolutions.testjava.services.exceptions.DataIntegrityViolationException;
 import com.seasolutions.testjava.services.exceptions.ResourceNotFoundException;
 import com.seasolutions.testjava.services.mappers.RoleMapper;
 import lombok.RequiredArgsConstructor;
@@ -11,8 +10,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-import java.util.Objects;
-
 @Service
 @Transactional
 @RequiredArgsConstructor

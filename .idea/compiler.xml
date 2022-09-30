@@ -6,10 +6,18 @@
         <outputRelativeToContentRoot value="true" />
         <option name="mapstruct.suppressGeneratorTimestamp" value="true" />
         <processorPath useClasspath="false">
-          <entry name="$USER_HOME$/.sdkman/candidates/gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.20/18bcea7d5df4d49227b4a0743a536208ce4825bb/lombok-1.18.20.jar" />
+          <entry name="$USER_HOME$/.sdkman/candidates/gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.8/448003bc1b234aac04b58e27d7755c12c3ec4236/lombok-1.18.8.jar" />
           <entry name="$USER_HOME$/.sdkman/candidates/gradle/caches/modules-2/files-2.1/org.mapstruct/mapstruct-processor/1.5.2.Final/74a21679400fceb1f98987926cea1786c0e39e77/mapstruct-processor-1.5.2.Final.jar" />
         </processorPath>
         <module name="testjava.main" />
+      </profile>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <option name="mapstruct.suppressGeneratorTimestamp" value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.sdkman/candidates/gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.8/448003bc1b234aac04b58e27d7755c12c3ec4236/lombok-1.18.8.jar" />
+        </processorPath>
+        <module name="testjava.test" />
       </profile>
     </annotationProcessing>
   </component>
