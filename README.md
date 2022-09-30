@@ -20,6 +20,40 @@ Project Test Java For SEA
 - Docker compose
 - OpenAPI/Spring Docs
 
+### Para testar endpoints
+- Setor
+```json
+{
+  "id": 2,
+  "name": "RH"
+}
+```
+- Cargo
+```json
+{
+  "id":2,
+  "name": "Rh Pleno",
+  "sector": {
+    "id": 1
+  }
+}
+```
+- Trabalhador
+```json
+{
+  "id":5,
+  "name": "Matheus",
+  "cpf": "649.777.170-07",
+  "role": {
+    "id":1
+  },
+  "sector": {
+    "id": 1
+  }
+}
+
+```
+
 ### Instalação com Docker Compose
 ```sh
 git clone https://github.com/MatheusWilliam31/sea_test_java.git
